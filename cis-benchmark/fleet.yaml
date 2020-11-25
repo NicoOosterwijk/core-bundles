@@ -1,0 +1,10 @@
+defaultNamespace: cis-operator-system
+helm:
+  releaseName: rancher-cis-benchmark
+  repo: https://charts.rancher.io
+  chart: rancher-cis-benchmark
+kustomize:
+  dir: ./overlays/dev
+targets:
+- name: k3s
+  clusterGroup: k3s
