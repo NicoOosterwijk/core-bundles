@@ -1,0 +1,13 @@
+defaultNamespace: cattle-system
+helm:
+  chart: rancher
+  repo: https://releases.rancher.com/server-charts/latest
+  releaseName: rancher
+  values:
+    hostname: rancher.digitalinfo.nl
+    ingress:
+      tls.source: letsEncrypt
+    letsEncrypt:
+      email: nico@digitalinfo.nl
+    auditLog:
+      level: 0 
