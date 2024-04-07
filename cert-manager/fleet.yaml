@@ -1,4 +1,12 @@
 defaultNamespace: cert-manager
+
+NamespaceLabels:
+  app.kubernetes.io/managed-by: Helm
+
+NamespaceAnnotations:
+  meta.helm.sh/release-name: cert-manager
+  meta.helm.sh/release-namespace: cert-manager
+
 helm:
   repo: https://charts.jetstack.io
   chart: cert-manager
