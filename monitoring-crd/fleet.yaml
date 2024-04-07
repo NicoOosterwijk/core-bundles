@@ -1,4 +1,12 @@
 defaultNamespace: cattle-monitoring-system
+
+NamespaceLabels:
+  app.kubernetes.io/managed-by: Helm
+
+NamespaceAnnotations:
+  meta.helm.sh/release-name: cattle-monitoring-system
+  meta.helm.sh/release-namespace: cattle-monitoring-system
+
 helm:
   releaseName: rancher-monitoring-crd
   chart: rancher-monitoring-crd
